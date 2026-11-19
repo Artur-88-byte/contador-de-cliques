@@ -1,0 +1,6 @@
+{
+  "name": "contador-de-cliques",
+  "version": "1.0.0",
+  "description": "Aplicação simples com teste automatizado e CI/CD",
+  "scripts": { "test": "node --test" }
+}
