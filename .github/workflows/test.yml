@@ -12,15 +12,12 @@ jobs:
 
     steps:
       - name: Baixar código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configurar Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: 20
-
-      - name: Instalar dependências
-        run: npm install
+          node-version: 24
 
       - name: Executar testes
-        run: npm test
+        run: node --test test.js
